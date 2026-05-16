@@ -1,2 +1,2 @@
-// IR module entry — populated in commit 2.
-export {};
+export * from './schema.js';
+export * from './types.js';
