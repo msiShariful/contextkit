@@ -1,9 +1,9 @@
 # contextkit
 
-[![npm version](https://img.shields.io/npm/v/contextkit.svg)](https://www.npmjs.com/package/contextkit)
+[![npm version](https://img.shields.io/npm/v/@msishariful/contextkit.svg)](https://www.npmjs.com/package/@msishariful/contextkit)
 [![CI](https://github.com/msiShariful/contextkit/actions/workflows/ci.yml/badge.svg)](https://github.com/msiShariful/contextkit/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Node](https://img.shields.io/node/v/contextkit.svg)](package.json)
+[![Node](https://img.shields.io/node/v/@msishariful/contextkit.svg)](package.json)
 
 > Token-efficient AI coding agent configuration. One source of truth, optimized output for Claude Code, Cursor, Codex, and more.
 
@@ -22,9 +22,9 @@ IR ─────────┼──► Cursor        (.cursor/rules/*.mdc wi
 ## Install
 
 ```bash
-npm install -g contextkit
+npm install -g @msishariful/contextkit
 # or run ad-hoc:
-npx contextkit migrate
+npx -p @msishariful/contextkit contextkit migrate
 ```
 
 Requires Node ≥ 20.
@@ -146,9 +146,9 @@ Override via `.contextkit/contextkit.yaml` → `budgets:`.
 Beyond the CLI, every layer is a library:
 
 ```ts
-import { readIR, writeIR } from 'contextkit/ir';
-import { enforce } from 'contextkit';
-import { getAdapter } from 'contextkit/adapters';
+import { readIR, writeIR } from '@msishariful/contextkit/ir';
+import { enforce } from '@msishariful/contextkit';
+import { getAdapter } from '@msishariful/contextkit/adapters';
 
 const ir = await readIR(process.cwd());
 const report = enforce(ir);

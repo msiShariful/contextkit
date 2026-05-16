@@ -1,5 +1,5 @@
 {
-  "name": "contextkit",
+  "name": "@msishariful/contextkit",
   "version": "0.1.0",
   "description": "Token-efficient AI coding agent configuration. Generate optimized CLAUDE.md, .cursor/rules, AGENTS.md and more from a single source of truth.",
   "type": "module",
