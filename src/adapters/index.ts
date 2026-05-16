@@ -1,2 +1,3 @@
-// Adapters module entry — populated in commit 8.
-export {};
+export * from './base.js';
+export * from './registry.js';
+export { claudeCodeAdapter } from './claude-code/index.js';
