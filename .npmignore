@@ -1,0 +1,15 @@
+src
+tests
+docs
+.github
+.vscode
+.idea
+*.config.ts
+biome.json
+tsconfig.json
+.editorconfig
+.nvmrc
+.gitignore
+coverage
+*.tsbuildinfo
+.DS_Store

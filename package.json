@@ -1,0 +1,104 @@
+{
+  "name": "contextkit",
+  "version": "0.1.0",
+  "description": "Token-efficient AI coding agent configuration. Generate optimized CLAUDE.md, .cursor/rules, AGENTS.md and more from a single source of truth.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./ir": {
+      "types": "./dist/ir/index.d.ts",
+      "import": "./dist/ir/index.js",
+      "require": "./dist/ir/index.cjs"
+    },
+    "./adapters": {
+      "types": "./dist/adapters/index.d.ts",
+      "import": "./dist/adapters/index.js",
+      "require": "./dist/adapters/index.cjs"
+    }
+  },
+  "bin": {
+    "contextkit": "./dist/cli.js"
+  },
+  "files": ["dist", "README.md", "LICENSE", "CHANGELOG.md"],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "ci": "npm run typecheck && npm run lint && npm run test && npm run build",
+    "prepublishOnly": "npm run ci"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "agents",
+    "claude",
+    "claude-code",
+    "cursor",
+    "codex",
+    "windsurf",
+    "aider",
+    "context",
+    "rules",
+    "claude-md",
+    "agents-md",
+    "cursorrules",
+    "config",
+    "config-generator",
+    "cli",
+    "developer-tools",
+    "llm",
+    "token-optimization",
+    "prompt-engineering"
+  ],
+  "author": "msiShariful <sharifulislam12570@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msiShariful/contextkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/msiShariful/contextkit/issues"
+  },
+  "homepage": "https://github.com/msiShariful/contextkit#readme",
+  "dependencies": {
+    "@inquirer/prompts": "^7.2.1",
+    "commander": "^12.1.0",
+    "js-tiktoken": "^1.0.15",
+    "mdast-util-to-string": "^4.0.0",
+    "picomatch": "^4.0.2",
+    "remark-frontmatter": "^5.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-stringify": "^11.0.0",
+    "unified": "^11.0.5",
+    "yaml": "^2.6.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.10.2",
+    "@types/picomatch": "^3.0.1",
+    "@vitest/coverage-v8": "^2.1.8",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
