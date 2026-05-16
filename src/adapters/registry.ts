@@ -1,9 +1,11 @@
 import type { TargetId } from '../ir/types.js';
 import type { Adapter } from './base.js';
 import { claudeCodeAdapter } from './claude-code/index.js';
+import { cursorAdapter } from './cursor/index.js';
 
 export const ADAPTERS: Record<string, Adapter> = {
   'claude-code': claudeCodeAdapter,
+  cursor: cursorAdapter,
 };
 
 export function getAdapter(target: TargetId): Adapter {
