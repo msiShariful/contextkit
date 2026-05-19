@@ -1,11 +1,21 @@
+<div align="center">
+
 # contextkit
 
-[![npm version](https://img.shields.io/npm/v/@msishariful/contextkit.svg)](https://www.npmjs.com/package/@msishariful/contextkit)
-[![CI](https://github.com/msiShariful/contextkit/actions/workflows/ci.yml/badge.svg)](https://github.com/msiShariful/contextkit/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Node](https://img.shields.io/node/v/@msishariful/contextkit.svg)](package.json)
+**Token-efficient AI coding agent configuration. One source of truth, optimized output for Claude Code, Cursor, Codex, and more.**
 
-> Token-efficient AI coding agent configuration. One source of truth, optimized output for Claude Code, Cursor, Codex, and more.
+[![npm version](https://img.shields.io/npm/v/@msishariful/contextkit?style=flat-square&color=cb3837&logo=npm&logoColor=white&label=npm)](https://www.npmjs.com/package/@msishariful/contextkit)
+[![CI](https://img.shields.io/github/actions/workflow/status/msiShariful/contextkit/ci.yml?style=flat-square&logo=github&logoColor=white&label=CI)](https://github.com/msiShariful/contextkit/actions/workflows/ci.yml)
+[![node](https://img.shields.io/badge/node-%3E%3D20-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org)
+[![license](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](./LICENSE)
+
+[![downloads](https://img.shields.io/npm/dt/@msishariful/contextkit?style=flat-square&logo=npm&logoColor=white&color=2ea44f&label=downloads)](https://www.npmjs.com/package/@msishariful/contextkit)
+[![this month](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.npmjs.org%2Fdownloads%2Fpoint%2Flast-month%2F%40msishariful%2Fcontextkit&query=%24.downloads&style=flat-square&logo=npm&logoColor=white&color=2ea44f&label=this%20month)](https://www.npmjs.com/package/@msishariful/contextkit)
+[![this week](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.npmjs.org%2Fdownloads%2Fpoint%2Flast-week%2F%40msishariful%2Fcontextkit&query=%24.downloads&style=flat-square&logo=npm&logoColor=white&color=2ea44f&label=this%20week)](https://www.npmjs.com/package/@msishariful/contextkit)
+
+</div>
+
+---
 
 Most projects have a 700-line `CLAUDE.md` (or `.cursorrules`, or `AGENTS.md`) that loads on every turn. That's expensive — every conversation pays for context the agent rarely needs.
 
